@@ -1,0 +1,172 @@
+.normal {
+  background-color: #a6a8775b;
+}
+
+.grass {
+  background-color: #76c8505b;
+}
+
+.fire {
+  background-color: #ee7f305b;
+}
+
+.water {
+  background-color: #678fee5b;
+}
+
+.electric {
+  background-color: #f7cf2e5b;
+}
+
+.ice {
+  background-color: #98d5d75b;
+}
+
+.ground {
+  background-color: #dfbf695b;
+}
+
+.flying {
+  background-color: #a98ff05b;
+}
+
+.poison {
+  background-color: #a040a05b;
+}
+
+.fighting {
+  background-color: #bf30295b;
+}
+
+.psychic {
+  background-color: #f656875b;
+}
+
+.dark {
+  background-color: #7258475b;
+}
+
+.rock {
+  background-color: #b8a1375b;
+}
+
+.bug {
+  background-color: #a8b7205b;
+}
+
+.ghost {
+  background-color: #6e58965b;
+}
+
+.steel {
+  background-color: #b9b7c75b;
+}
+
+.dragon {
+  background-color: #6f38f65b;
+}
+
+.fairy {
+  background-color: #f9aec75b;
+}
+
+.content {
+  padding: 1rem 1rem 5rem;
+  background: #98d5d7;
+  width: 100vw;
+  background-image: url("../image/bola-transparente3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 500px;
+  max-width: 100%;
+  min-height:100vh;
+
+  .heading {
+    color: var(--white);
+    text-align: center;
+    font-size: 7rem;
+    background: linear-gradient(
+      to right,
+      #fff 20%,
+      #65c7f7 40%,
+      #0052d4 60%,
+      #fff 80%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% auto;
+    animation: animate 7s linear infinite;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0 center;
+    }
+    50% {
+      background-position: 400% center;
+    }
+    100% {
+      background-position: 0 center;
+    }
+  }
+
+  .pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    list-style: none;
+
+    padding-top: 40px;
+    padding: 0;
+    margin: 0;
+    .pokemon {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem;
+      padding: 2rem 1rem;
+      color: #fff;
+      // background-color: var(--green);
+      border-radius: 1rem;
+      // background: rgba(0,0,0,.8);
+
+      .number {
+        color: var(--dark-blue);
+        opacity: 0.8;
+        text-align: right;
+        font-size: 1rem;
+      }
+      .name {
+        color: #fff;
+        margin-bottom: 0.25rem;
+        text-transform: capitalize;
+      }
+      .detail {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .types {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          .type {
+            // background-color: var(--green2);
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.625rem;
+            margin: 0.25rem 0;
+            border-radius: 1rem;
+            filter: brightness(1.1);
+            text-align: center;
+          }
+        }
+
+        img {
+          max-width: 100%;
+          height: 70px;
+        }
+      }
+    }
+  }
+}

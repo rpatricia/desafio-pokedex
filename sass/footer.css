@@ -1,0 +1,33 @@
+.footer {
+  background: var(--water);
+  text-align: center;
+  overflow: hidden;
+  height: auto;
+}
+.footer .social {
+  padding: 1rem 0;
+}
+.footer .social a {
+  width: 4rem;
+  height: 4rem;
+  color: var(--dark-blue);
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+.footer .social a:hover {
+  color: var(--white);
+  transition: all ease 0.7s linear;
+  transform: scale(1.1);
+}
+.footer .credit {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--dark-blue);
+  padding: 0 0 1rem;
+}
+.footer .credit span {
+  color: var(--white);
+}
+.footer .credit span .fa-heart {
+  color: red;
+}/*# sourceMappingURL=footer.css.map */

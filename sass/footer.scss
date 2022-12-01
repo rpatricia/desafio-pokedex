@@ -1,0 +1,39 @@
+.footer {
+  background: var(--water);
+  text-align: center;
+  overflow: hidden;
+  height: auto;
+
+  .social {
+    padding: 1rem 0;
+    // border-top: var(--border);
+
+    a {
+      width: 4rem;
+      height: 4rem;
+      color: var(--dark-blue);
+      font-size: 2rem;
+      margin: 0.3rem;
+
+      &:hover {
+        color: var(--white);
+        transition: all ease 0.7s linear;
+        transform: scale(1.1);
+      }
+    }
+  }
+  .credit {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+    padding: 0 0 1rem;
+
+    span {
+      color: var(--white);
+
+      .fa-heart {
+        color: red;
+      }
+    }
+  }
+}

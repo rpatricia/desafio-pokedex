@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    min-height: 100vh;
+  }
+  .content .heading {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 62.5%;
+  }
+  .content {
+    max-width: 100%;
+    min-height: 100vh;
+  }
+  .content .pokemons .pokemon .detail {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .heading {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 280px) {
+  html {
+    font-size: 55%;
+  }
+  .content {
+    max-width: 100%;
+    min-height: 100vh;
+  }
+  .content .pokemons .pokemon {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .content .heading {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=media.css.map */
